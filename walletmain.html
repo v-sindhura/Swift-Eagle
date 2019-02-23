@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Wallet main page</title>
+    <style>
+        body{
+            background-color: darksalmon;
+            
+            height:50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        p1{
+            text-decoration-color: darkslategray;
+            font-size:30px;
+            
+        }
+         .image
+        {
+            width: 220px;
+            height: 220px;
+            border-radius: 100%;
+            position: absolute;
+            top: 60px;
+            left:600px;
+        }
+        .ab{
+            position: top;
+            left: 210px;
+            top: 250px;
+            font-size: 50px;
+            font-family:sans-serif;
+        }
+        .Buttons a:hover
+        {
+            background-color: darkorange;
+            border-radius: 10px;
+            text-decoration: none;
+            
+        }
+        .Button1{
+            position: absolute;
+            left:350px;
+            top:450px;
+            font-size-adjust: auto;
+            font-family:sans-serif;
+           text-decoration: none;
+         text-decoration-color: black;
+            
+        }
+        .Button2{
+            position: absolute;
+            left:880px;
+            top:450px;
+            font-size-adjust: auto;
+            font-family:sans-serif;
+            text-decoration: none;
+        }
+         </style>
+</head>
+<body>
+   
+     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAB7FBMVEX7+/v0gxwAAADuRyJzy9D////8/PwQcXMAAAL0gh550dY1XFv2ghz/kTJzc3PwRyI6My0yMjK7u7vu7u7R0dGnp6ecnJwAAAdBOzL6hx03NzehoaHo6Oji4uL1SSPwSyhqampeXl7+jSdUVFTHx8eEhISNjY1FRUV8fHy3t7c1IxEREREeHh6IiIj9iBgSdXbyVzvXdh4oKChdNhQAEhdURjvmgCTlRib0eQBBQUHMcB/Nzc2Ajo21YxhjVlup4NxLMBhkbnGmzc1iq69oNhWN19mfVx1sPxZsvsKSv792np9wgIdVY2gwHRNec2l8rbMVCBRbdXwjEg6FRxxSioyFnKNNRkuQys6TUR1dm5tFdHlu0MuL29L5k0SmWxpXMRfzlUzWiUvZnnCZfmbGhlSfbU6Sb02EZFdqXEtaRS6qc0TAfUfcikfA6e0SHyZgh4IZMCv4pWo7JRv1t5X06Nr38OH31LVBIwzLejAqHxUxTVCVtbpoSzAAABj5omF6TSbPlGKnbEHOfShBbmVclp8jMidVGhRjQz6HT0WoV0u9XUjbYkuIKRURXF8RLS+JVEu6NxjwZ03Ud2VyOjK4TjuWLxvQQiOKZl53JxxNJBSjaVvCe2fkiHhhHxAAJSCjiIIHPT3CpYy5Sy8rCwu+mi7SAAAQt0lEQVR4nO2di0MT1xLGw4FdEohEHiFugIT3w2AgCOFhqfbaglq8VaAVaUVoFai1VG17sdT2tre3UEUQVBBt9VL8R+/M2d1kN9mEJGTNRPhqW/Mw7P6cmTNnzpwTi+VABzqQsURR4Mr0dZAX51R5osTpdJYd4IojBGUpK69hioqrDmgZiRsUgKpjOpUd0NJJVDi1NDaxaFUe0FLEMYmVJY3VHVGUXs08wf91CGKmrzLzUs2pwcicQDV/eTw7+Jvy/W1anFNpmbPZbcwJ5PrfuifXIdMq3bemhaDEKmdzcSSe1t7C8fE55UH1Xx5HLsjzEh407kfTkhOokmO9EZisvUMXL46Otq28Up6Y/bNdZpXr2MTHln1mWjyBOhFOoBRdaBpCTG35+Svb6nPVfwEqmRWY1hY8U7J/TIsbVFVLQ0SA8jUV/gac8kFt+dudqpU9e+z1qKTQtLox1u8PWJEZucppaFzhlA9WFXI/tvps2ePRsgLTWrQyJr7tfqgYVOSIh2Fc4QQWBaRWQy/N/rmuB8VNawNeqX+bTUsZ8qr1nDoWwKDa2hRSiEpDyv1i2RuNSvHD5rcVlhLKI6Z4bnS8/JDQ+bbnQq+uPnvcbkQKYTkWMYvP9F2lX8a5wYWFwpDjqTa1vWoNk3r0oN0TA5Xqh5VvVdBSJi8V1a0Rnlc4HvK7/DY5R1jVvKH42eN1jyfXGwuVkmq9LcmDWjOImrz0coNqk+M4+t3K9vYr3TuOvEBSMW1KgZUL72zIelhK7bfyREVRxOSllXuewgkhrYbik+p+r5buL8eKU3p5IGi5sxmWbE1V9RXNEYEcHGtB5pSPlFbnfJGvo3MuvVhedyhp+q68PA9Z9s54EFRlfXl11FSY+WSDQmMKm5JOruKlPx6ARXnCE5rdtcaytGAKpCwtRa1RFHzuhd/aOKftVZcBpU730qP7D5bXk+SE8mKm1ZJ1sIBUqdPA7+QRT586qabU2gW2hJS8nuQ5cTkcvuyL8ICqpC4KE68ZgEmtRIx01sNLf9yXITkQEip5UFwY4ZuyCpYoiM6w9/l6uTmpKdTKtjaOr3ZBXFr3ckNK2JYQpkdRxB/hET6bYAmCM+RZC4VtmkQTpsLhbJwdTj5+53JK3u7NjY2t56it7ghYmMNnT21ZFOpVq1pY4aDU+opmKoyguD0lQUnFtLWoAc4e6Uk7smo4FEqVgpSvsC0/VDTQlVdckGN6d83GI8zJ270GmIYjBwX2+7rucxxZNByKQol8D50rbaE5XtvKQnjksy6hSSWQX6p3D5w2d7YWL0RhcnV2YuLxWGedjlxXtiyIiUIR8mC+FTVSteUvaJzPtcSLBkmB2lhUMYc+pqML8rDHy+vrT+HBM/3neXxZUtISLXLBZTsU0DUmxXxPnsYrr0Rx8njXNnThCVSMmJbbefyC/3jhqdV2PayX2VGHFwVeS5jLDxmVJqA/2QFSiTkf5lrdaw+fc2uyKrgOvwuY5HQ1/CF8PUfvh/hUNkylBV4a3lYdcFzJp1x3nuxAmErE+fAtHo8CKuR6c3yO6DBIMjxrsh9qn4JEy0cflhzb1cCePyqT4qAScj7uW907W6+1EQqrM+u5seKcA/2wt10HCxMt+nUHoUPHahjvdyvBKIW5OMTyl7oiTcfS/Qft8fN6vmSv80NubOSzUqFM44P5bUN4u5sJOJ9DDVG6AsThP+5zz9vlj3M0L7SwICu1ZgGsCrju0NTmHA5/3Y74EZ1n5ZhFvdYNeV18GoSD3a6oeQ46q4O1mRWwILx3hqaBH8JNrMWdzCAoNChdctC5pEyDEk3FsMpQzJN4h6Y9pIo4LLGKaWC1QXL6OiYrHskhQuknL7cwlnt5iSZBUrlKPNcGLQ6L+mqYgLCYalij7zH23BiWgzuenlMneh7nhH6bTC2LT5z/xJ8kl8E8PIpZ5M54usgELPbdUkxr1NCyHAZDnmxQBpWpxFjxoPUCx1Jvd/fa2trOBo6P7g5QnbOUbL4lNGJytK3QggdMV2oCm/F0byzqhjwXH/NyU+CkVv+83eh1d7YWX4dN1RqOgk6qtPhoyFRaOBq+9GgWjyE92JJJWdUk6ml7MqFcCwkYbe5sbC0+jy7ZqMDkn0K1pQYtCzXH89JzvQDloXYat6P2oMGQB7M8ryOZ8kPIkjbXNh4uPo+u18QS0VxeaFbtZhtx/YgPFrvVuOW5r9jUnftyKXlXPhpEDm5ID18+N1qFVTy61V03Oz19/fqNa9empqZu/nz3+q84hyinGeUxz7r690/80ldX8kff4b97uSmPUssuRPXDUyU3iCd1KQJC9iYE7K2XBvVRFdHckdmZ6RvXpiYnrxyqlSTJ75fs8AslSUH8yxFIdgKiZV31f1unBqVb8v0Md4O8nkfw7PBTbEHzGqhb1iYIB7SNh0DodSSicNz+CRhNX7/x1U1ABHD8HE6OVjaUNMEwapGEBTFr3t/z89/Gi/EcXMxXElOnu2sG/OzmlSuH/H7OKCeepCDDFVeSsJzgFnab3X/7i9ibIRJTRHnU1dF1b/rGV1OTV8DTwL12YaShdRXmQjRhlcBt2ew5gGvy8y+6jJoYkpGr+EjXzPT1a8Bo8hBEI2k3OzKCNcaIlmuEMrCIAL8hu91/aHLq2o3r09Mzs7NdXUeOHI7UEVVdqC+/nL03MzPNRzMwoambEI3kiG1PBVIIVh9cEslFRLEU/hr7JPVCYVDCsUmqrT0UT7UofCeEIPxlD9tQyozCwqBFsmtSFODKJiTdxabhfqNlS/yt0rCV6CKi0MTYmLT7HbxBYYQvogmrCBItYrAGGaujCaucMZ8/03x0kkYwd8g0GCMJLZhomRKm4ileCJMGGNFuLeEEXFmQFqx+RnSbWETuQEH2PqpZqQVzh/49WZYtibQgEdkDjOrqBeYOA6QsyxaAFJ7mqStYpBkkNRxyyzpBE1YFY3ekNx7h44nsfMci1DNmJcUqx0YWllgJESK419tL8vldxKiuh4kWzB1MMq0UYVmpwrJgm+SEScNharAkH2MVRGFVw3C4N1gxmaQGy3+esXKRZmUZptLze4GV9pmldAdL1E0UafGu0r1G+LTKz2GxRoK0eI9WIGXrSPNcB+U/JS9/FFnIBS4+HPan6Ic2M2ExH711CxwOU6wsp3sOLQthFX3DcZGjhcPh8cxNpaMDgP84YzWfXea2Ra2uhcPhMKW6A8JirPrSLYKZPA6HVkrDoQyLfZ03R2/rNN84kHix1JQwpZMMa/jrAtwcQ8wNeWU58eHQfFi4FgZR62TeGYJbCbCyPJam+l86snkZVnlBXh7B+rLQC8MhmWKpze4flEMWTVjV2NGWtrvdm3FJ/r55bPVq/IAorEbGXGnrB0l5Xm3PwZbSiXk+FL578lMZFrmYVUEid5Bqbf3vK+1075wEVBDgCcIqyfRCq13y5wQGTqkbLd79B/pgXt5p+H2m4USKJ1qGuYPpCxn2HGyeA1CD4W75987KqPLyLtPLs3DNIgMLrdguCDGqb2DwqKYr9ZOPTxYoqPIwKSW3zZwXaUbeCCy73FFps9mCff0DI1fVjl+51bn3nbOffZoXUsE4xd4j4Y3AQjvqHxs8dXT4giu6LfrC0LlLHxTkaVVQSLGrDStaZhdppJz+QRUM3/4F/6qt8+5/njv7QYGelAKrmh6sGsbOm5rCSzljhj32xUMfAicDUIRhNTDWaSYsf2BYuwPDV/zJ0MUPz310KRamMCx6nbhY/nOZmCZgLx+yulBz8dxHZzmigniUaMPCHTzmpfBSH7enIYxLuyMiD8vUpUN7EON5cSjVzHZY9XHmO3su9knz4INNSaMiC6vKxMmhNAisLlxKnhVRWHy+02/Q/peGoA/BHZzwx093Z5MtsHC+M2EOLB6wPk4mrhOHJVfhTWkslXClZiiFgEUYls+kySHfANCRGiuysHoZe98MWLzH42xqrMjCqjFnI50dt/AOpRSwCMMqgpm0CbD45vBUDYssrEbGhtPPiof34hQjlgyL4Lm4/LAjk9rS6lL1wryCbZLfEym0QGxJEyztx0gAqzVlWLhsSK3lyMInh9Z0bdHUfoo0Ap87miIt3kRDrvUvNDlMh23piPPRkH2UPC2sd+GqIbnFHUuo6yj9KTweO8B8l5KkVVAwevlyIRYMKZ6or0wO94rGoB836OI1h0RpoUWduTz6u1J/pleBR8mTw73CMpB0lzEXc51JgBbnNL6gqdVXE9w2YJHnO+asHAItrDtcjksLOZ0eX9AvAHWU0GTF5ztJrRwmHN5s0l3O4JsYtLAsf3q08FbEGllTS5lA0gct8mLYnnY7xZH0HxfGavdp/XJFgRKfCvXfS8YXq6ton4Rbbk4KL9MKnpdX6H/772mF1JnTl0fHC3+PMKeO2S9++RmPwKDWlKUXnrJi4tYw27+NlqO16pydvnZ7stbfwytg1Hoj9eKnrATM68fy9x2OyWmua/rG1GSt5MfT9GwcFu3Tzvk+OjOyUlVS7d17Ud0OP/Xem/4FOPm1PzgLYMlZqZkbAiTp0NSvM18eaQJ1zc5cvzF1Ew/jlCLPK6UP6820aEmSX6qVDwz0SzFO4+TnhZQRh9X0RvfRxfF3hEX13G5FWFg+SmEfnR0PV6E4f9aIn3Vufnfy7rLh4SoES35ayYmW+Tu+EoNF8+TNkHiiReGENpsdpt3HaMPivSFmnbKSjCRpmOQCmE5vpr07EVjz9L/rUHAzK4lNh/55ejujIyVUMyuFPfg9n2P5gTqsRlPrDgmzuo3xgBGuZqF47hAwBUAS2Zs9+D2HRfTLZFTxY/RTPZImXbL3fCcKreSrf7h0aM34gaU9/xL4LJVV0g5aeIy+NbO5g73nW0FeOyF6pmtYuDUsjXvwU4Fl/x5iFf8KcJpnuoaFF2nmBp5EaN0WRXlYJl6jwQWevR9YuidUObae7wR5oYnmma5h8Q08qR9nlw5YOTmTgpzDEK/RyGsWmZ5KY+pQT79GYxFFlrnDzlWD9n8r8IMTqMOSy/CZnkpPCtzC6cNqMKe/Oyn1iBwW0dOCw4IIn9nhkMMq5W5IfMUi6RPaTIL1HR+VqedZSg6feVjH6M8NLUpJa6I2s7C+xx1qPuL1LIu8aMHLNOZ+w5PS2qCu3vNeB5vau9vDE3iCm1CihOOhlY3YTOim4d/kK/FmB7stGAwGAn2qAoHgIZutlr8s3X0Pa39l9C3LImKqZWVsLCilJXSh7XAEtbZgoK9/YmBk8Pj8eZcr6tweeGb4KEr+tlzqizuyRF5MAh3vs+31PH1uRjnBvomxwVPJfWNwK/GisioRDw/h1uUa7A/6UzIw7m05gf6Jkas/uJRPS0qlWWFYKKG0OeQcpwbAwBImxnuuaoOB/oGR47443xvc6q6rqS5qbjhWjmpsbC6qqestbsVz7Hy+opKqLIhXIYlCaXm429p1fnCgP2DjJAx7z5TAXRvEo9YGrwIlI04dNUXHKpz1ZVWlFiGWRPhHIN3TbSARrrnsmKY7HdzId3VwZKC/HwauYGiDThCFcXts5Ph8jKjUW93oPFFVKqo8ULF/blZhCgturKy8yej2rTh0GQxoEWoqKi8pKw0xyvT9mC24SUt9Y50BrbgCW2pRKb31jLTi3lNVX9Hc1BqfEKi1riFsS/uKklZyvLFUlpU4yxuaq+t63cWy3E0wqjU3NDpb6veRwyUiUY3RMUayA0gHOtCBDnSgA5HV/wF0Jx22URTeOAAAAABJRU5ErkJggg==" class="image">
+    <p class="ab"> choose your payment </p>
+    <div class="Buttons">
+        <p1>
+    <a href="wallet1.html" class="Button1">Cash on arrival</a>
+        <br>
+    <a href="wallet.html" class="Button2">Pay using card</a>
+            </p1>
+    </div>
+
+</body>
+</html>
