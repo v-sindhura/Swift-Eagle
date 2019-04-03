@@ -24,8 +24,6 @@ if(isset($_POST['registerbtn']))
 		$sql="DELETE FROM `promocodes` WHERE promo='$promoname'";
 		if (mysqli_query($db, $sql)) {
     echo "Record deleted successfully";
-} else {
-    echo "Error deleting record: " . mysqli_error($db);
 }
 
 		
