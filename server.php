@@ -5,7 +5,6 @@
         session_start(); 
     } 
 
-
 $username="";
 $email="";
 $name="";
@@ -33,8 +32,23 @@ if(isset($_POST['register']))
 	if(empty($username)){
 		array_push($errors, "Username is required!");
 	}
+	if(!(empty($username))){
+	$query = "SELECT * FROM user WHERE username='$username'";
+    $result = mysqli_query($db, $query);
+    $counti = mysqli_num_rows($result);
+	if($counti!=0){
+		array_push($errors,"Username already Exists");
+	}}
 	if(empty($email)){
 		array_push($errors, "Email is required!");
+	}
+	if(!(empty($email))){
+		$query = "SELECT * FROM user WHERE Email='$email'";
+    $result = mysqli_query($db, $query);
+    $counti = mysqli_num_rows($result);
+	if($counti!=0){
+		array_push($errors,"E-mail already Exists");
+	}
 	}
     if(empty($name)){
 		array_push($errors, "Name is required!");
@@ -48,10 +62,16 @@ if(isset($_POST['register']))
 	if(empty($password_1)){
 		array_push($errors, "Password is required!");
 	}
-	if($password_1!=$password_2)
+	elseif($password_1!=$password_2)
 	{
 		array_push($errors, "Your passwords do not match!");
 	}
+	elseif(!(!(ctype_alnum($password_1)) && strlen($password_1) >= 8 && preg_match('/[A-Z]/', $password_1) && preg_match('/[a-z]/', $password_1)&& preg_match('/[0-9]/', $password_1))){
+	array_push($errors, "Your password Should contain atleast one digit,uppercse,lowercase letters and special symbol with total of 8 charecter length!");	
+	}
+    if(preg_match('/[0-9]/', $mmobile) && strlen($mmobile)==10){
+        array_push($errors, "Enter valid mobile number!!");
+    }
 
 	if(count($errors)==0)
 	{
